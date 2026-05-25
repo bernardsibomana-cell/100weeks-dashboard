@@ -2633,7 +2633,14 @@ function openPwChange(id, type) {
   document.getElementById('edit-overlay').style.display = 'flex';
   setTimeout(function(){ document.getElementById('edit-pw').focus(); }, 200);
 }
+</main>
 
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
 </script>
+
 </body>
 </html>
+
